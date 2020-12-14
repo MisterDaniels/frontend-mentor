@@ -1,0 +1,25 @@
+{
+    "name": "frontend-mentor",
+    "version": "1.0.0",
+    "description": "frontendmentor challenges",
+    "scripts": {
+        "watch:scss": "node-sass --recursive --watch challenges -o challenges"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MisterDaniels/frontend-mentor.git"
+    },
+    "keywords": [
+        "challenges",
+        "frontend"
+    ],
+    "author": "Daniel Silva",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MisterDaniels/frontend-mentor/issues"
+    },
+    "homepage": "https://github.com/MisterDaniels/frontend-mentor#readme",
+    "dependencies": {
+        "node-sass": "^5.0.0"
+    }
+}
