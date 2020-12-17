@@ -1,8 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap';
 
-@import '../../../base';
-
-$link-color: #ffffff;
+@import '../../../base.scss';
 
 $base-font-size: 18px;
 $primary-color: hsl(185, 75%, 39%);
@@ -11,6 +9,9 @@ $text-grayish-dark-color: hsl(227, 10%, 46%);
 $text-gray-color: hsl(0, 0%, 59%);
 $background-highlight-color: #ffffff;
 
+$link-color: $primary-color;
+
 body {
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: $base-font-size;
 }

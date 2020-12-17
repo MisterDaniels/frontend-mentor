@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "frontendmentor challenges",
     "scripts": {
+        "build:scss": "node-sass --recursive challenges -o challenges",
         "watch:scss": "node-sass --recursive --watch challenges -o challenges"
     },
     "repository": {
