@@ -1,16 +1,24 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap';
+html {
+  /* A cada 1rem será considerado 10px */
+  font-size: 62.5%; }
+
 *, :before, :after {
   box-sizing: border-box; }
 
 body {
   height: 100vh;
   width: 100vw;
-  overflow-anchor: none; }
+  overflow-anchor: none;
+  -webkit-font-smoothing: antialiased;
+  margin: 0; }
 
 .attribution a {
   text-decoration: none;
   color: #000000;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-left: 5px; }
 
 .attribution {
   position: fixed;
@@ -21,4 +29,35 @@ body {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 18px; }
+  font-size: 1.8rem; }
+
+.card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  max-width: 300px; }
+
+.card.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card.profile .header {
+  width: 100%;
+  height: 100px;
+  background: no-repeat center/cover url(../images/bg-pattern-card.svg); }
+
+.card.profile span.avatar {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  transform: translateY(-40px); }
+
+.card.profile span.avatar img {
+  width: 100%;
+  height: 100%; }
+
+.card .header {
+  height: 40%; }

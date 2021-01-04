@@ -1,5 +1,10 @@
 $link-color: #000000;
 
+html {
+    /* A cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+
 *, :before, :after {
     box-sizing: border-box;
 }
@@ -8,12 +13,15 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-anchor: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .attribution a {
     text-decoration: none;
     color: $link-color;
     font-weight: bold;
+    margin-left: 5px;
 }
 
 .attribution {
