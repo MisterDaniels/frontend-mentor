@@ -4,7 +4,8 @@ html {
   font-size: 62.5%; }
 
 *, :before, :after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 body {
   height: 100vh;
@@ -12,6 +13,9 @@ body {
   overflow-anchor: none;
   -webkit-font-smoothing: antialiased;
   margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 1rem; }
 
 .attribution a {
   text-decoration: none;
@@ -25,3 +29,6 @@ body {
   width: 100%;
   justify-content: center;
   bottom: 0; }
+
+.opacity-30 {
+  opacity: 30%; }

@@ -5,7 +5,8 @@ html {
   font-size: 62.5%; }
 
 *, :before, :after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
 
 body {
   height: 100vh;
@@ -13,6 +14,9 @@ body {
   overflow-anchor: none;
   -webkit-font-smoothing: antialiased;
   margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 1rem; }
 
 .attribution a {
   text-decoration: none;
@@ -27,9 +31,18 @@ body {
   justify-content: center;
   bottom: 0; }
 
+.opacity-30 {
+  opacity: 30%; }
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 1.8rem; }
+  font-size: 1.8rem !important; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 1.8rem !important; }
+
+hr {
+  width: 100%; }
 
 .card {
   border-radius: 10px;
@@ -58,6 +71,26 @@ body {
 .card.profile span.avatar img {
   width: 100%;
   height: 100%; }
+
+.card.profile .detail .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card.profile .detail .top .principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.card.profile .detail .top .principal :last-child {
+  margin-left: 10px; }
+
+.card.profile .detail .top .principal h1, .card.profile .detail .top .principal h2 {
+  font-size: 1.8rem; }
+
+.card.profile .detail .top .location {
+  margin: 15px auto;
+  font-size: 1.6rem; }
 
 .card .header {
   height: 40%; }
