@@ -5,7 +5,7 @@ html {
   font-size: 62.5%; }
 
 *, :before, :after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0; }
 
 body {
@@ -17,6 +17,12 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-size: 1rem; }
+
+p {
+  margin: 0 !important; }
+
+label, span {
+  user-select: none; }
 
 .attribution a {
   text-decoration: none;
@@ -35,20 +41,29 @@ h1, h2, h3, h4, h5 {
   opacity: 30%; }
 
 body {
+  display: flex;
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 1.8rem !important; }
+  font-size: 1.8rem !important;
+  align-items: center;
+  justify-content: center; }
 
 h1, h2, h3, h4, h5 {
   font-size: 1.8rem !important; }
 
 hr {
-  width: 100%; }
+  border: none;
+  height: 2px;
+  color: #000000;
+  background-color: #000000;
+  width: 100%;
+  opacity: 5%;
+  margin: 20px 0px; }
 
 .card {
   border-radius: 10px;
   background-color: #ffffff;
   overflow: hidden;
-  max-width: 300px; }
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .card.profile {
   display: flex;
@@ -75,7 +90,8 @@ hr {
 .card.profile .detail .top {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 0px 80px; }
 
 .card.profile .detail .top .principal {
   display: flex;
@@ -89,8 +105,23 @@ hr {
   font-size: 1.8rem; }
 
 .card.profile .detail .top .location {
-  margin: 15px auto;
+  margin-top: 15px !important;
   font-size: 1.6rem; }
+
+.card.profile .detail .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.card.profile .detail .bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card.profile .detail .bottom div label {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2rem; }
 
 .card .header {
   height: 40%; }

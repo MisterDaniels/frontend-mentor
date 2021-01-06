@@ -4,7 +4,7 @@ html {
   font-size: 62.5%; }
 
 *, :before, :after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0; }
 
 body {
@@ -16,6 +16,12 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-size: 1rem; }
+
+p {
+  margin: 0 !important; }
+
+label, span {
+  user-select: none; }
 
 .attribution a {
   text-decoration: none;
