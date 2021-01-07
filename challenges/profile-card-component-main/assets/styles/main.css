@@ -26,26 +26,40 @@ label, span {
 
 .attribution a {
   text-decoration: none;
-  color: #000000;
   font-weight: bold;
-  margin-left: 5px; }
+  margin-left: 5px;
+  color: #ffffff; }
 
 .attribution {
+  color: #ffffff;
   position: fixed;
   display: flex;
   width: 100%;
   justify-content: center;
   bottom: 0; }
 
+@media (max-width: 524px) {
+  .attribution {
+    font-size: 1.2rem; } }
+
+@media (max-width: 364px) {
+  .attribution {
+    font-size: 1.0rem; } }
+
 .opacity-30 {
   opacity: 30%; }
+
+.background {
+  position: absolute;
+  z-index: -1; }
 
 body {
   display: flex;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.8rem !important;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #19a2ae; }
 
 h1, h2, h3, h4, h5 {
   font-size: 1.8rem !important; }
@@ -58,6 +72,27 @@ hr {
   width: 100%;
   opacity: 5%;
   margin: 20px 0px; }
+
+.background {
+  width: 80%; }
+
+.background div {
+  position: absolute;
+  max-width: 100%; }
+
+.background :first-child {
+  left: 0;
+  top: 0; }
+
+.background :first-child img {
+  width: 400px; }
+
+.background :last-child {
+  right: 0;
+  bottom: 0; }
+
+.background :last-child img {
+  width: 300px; }
 
 .card {
   border-radius: 10px;

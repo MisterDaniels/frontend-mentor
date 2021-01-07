@@ -10,14 +10,13 @@ $text-gray-color: hsl(0, 0%, 59%);
 $background-highlight-color: #ffffff;
 $border-highlight-color: #ffffff;
 
-$link-color: $primary-color;
-
 body {
     display: flex;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: $base-font-size !important;
     align-items: center;
     justify-content: center;
+    background-color: $primary-color;
 }
 
 h1, h2, h3, h4, h5 {
@@ -32,6 +31,37 @@ hr {
     width: 100%;
     opacity: 5%;
     margin: 20px 0px;
+}
+
+.background {
+    
+    width: 80%;
+
+    div {
+        
+        position: absolute;
+        max-width: 100%;
+
+    }
+
+    :first-child {
+        left: 0;
+        top: 0;
+
+        img {
+            width: 400px;
+        }
+    }
+
+    :last-child {
+        right: 0;
+        bottom: 0;
+
+        img {
+            width: 300px;
+        }
+    }
+
 }
 
 .card {

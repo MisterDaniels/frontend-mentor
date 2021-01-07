@@ -1,4 +1,4 @@
-$link-color: #000000;
+$link-color: #ffffff;
 
 html {
     /* A cada 1rem será considerado 10px */
@@ -32,12 +32,13 @@ label, span {
 
 .attribution a {
     text-decoration: none;
-    color: $link-color;
     font-weight: bold;
     margin-left: 5px;
+    color: $link-color;
 }
 
 .attribution {
+    color: $link-color;
     position: fixed;
     display: flex;
     width: 100%;
@@ -45,6 +46,27 @@ label, span {
     bottom: 0;
 }
 
+@media (max-width: 524px) {
+
+    .attribution {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 364px) {
+
+    .attribution {
+        font-size: 1.0rem;
+    }
+
+}
+
 .opacity-30 {
     opacity: 30%;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
 }

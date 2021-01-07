@@ -25,16 +25,29 @@ label, span {
 
 .attribution a {
   text-decoration: none;
-  color: #000000;
   font-weight: bold;
-  margin-left: 5px; }
+  margin-left: 5px;
+  color: #ffffff; }
 
 .attribution {
+  color: #ffffff;
   position: fixed;
   display: flex;
   width: 100%;
   justify-content: center;
   bottom: 0; }
 
+@media (max-width: 524px) {
+  .attribution {
+    font-size: 1.2rem; } }
+
+@media (max-width: 364px) {
+  .attribution {
+    font-size: 1.0rem; } }
+
 .opacity-30 {
   opacity: 30%; }
+
+.background {
+  position: absolute;
+  z-index: -1; }
