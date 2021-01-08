@@ -3,6 +3,8 @@ $link-color: #ffffff;
 html {
     /* A cada 1rem será considerado 10px */
     font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 *, :before, :after {
