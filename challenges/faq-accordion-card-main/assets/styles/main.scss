@@ -68,15 +68,56 @@ body {
                 height: 1px;
             }
 
+            input {
+
+                width: 100%;
+                height: 100%;
+                display: none;
+
+                &:checked {
+
+                    & ~ .title p {
+                        font-weight: bold;
+                        color: #000000;
+                    }
+
+                    & ~ .title img {
+                        transform: scale(-1, -1);
+                    }
+
+
+                    & ~ .detail {
+                        display: inline;
+                    }
+
+                }
+            }
+
             .title {
-                display: inline-block;
+                display: flex;
+                flex-direction: row;
                 width: 100%;
                 margin-bottom: 10px;
-                font-size: 1.4rem;
-                color: $very-dark-grayish-blue;
+                justify-content: space-between;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    color: $very-dark-grayish-blue;
+                }
+
+                img {
+                    width: 10px;
+                    height: 8px;
+                    align-self: center;
+                }
             }
 
             .detail {
+                display: none;
                 font-size: 1.2rem;
                 color: $very-dark-grayish-blue;
             }
