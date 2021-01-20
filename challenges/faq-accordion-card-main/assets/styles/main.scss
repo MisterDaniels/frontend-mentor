@@ -39,13 +39,13 @@ body {
     border-radius: 20px;
     width: 40%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    overflow: hidden;
 
     .left {
         display: flex;
         grid-area: 'left';
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         .hero {
             position: absolute;
@@ -57,15 +57,14 @@ body {
         }
 
         .back {
-            position: absolute;
             transform: translateX(-25%);
             z-index: 1;
-            overflow: hidden;
         }
 
         .front {
             position: absolute;
-            transform: translateX(-120%);
+            left: 12%;
+            bottom: 25%;
             z-index: 2;
         }
 
