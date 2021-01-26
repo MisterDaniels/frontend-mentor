@@ -10,6 +10,7 @@ $highlight-background: #ffffff;
 $very-dark-desaturated-blue: hsl(238, 29%, 16%);
 $soft-red: hsl(14, 88%, 65%);
 $light-grayish-blue: hsl(240, 5%, 91%);
+$primary-color: #F37B57;
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
@@ -38,7 +39,16 @@ body {
     background-color: $highlight-background;
     border-radius: 20px;
     width: 40%;
+    min-width: 790px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    .background {
+        width: 100%;
+        height: 100%;
+        background: -60% 0% no-repeat url(../images/bg-pattern-desktop.svg);
+        background-size: 60%;
+        z-index: 0;
+    }
 
     .left {
         display: flex;
@@ -46,6 +56,7 @@ body {
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        z-index: 1;
 
         .hero {
             position: absolute;
@@ -63,7 +74,7 @@ body {
 
         .front {
             position: absolute;
-            left: 12%;
+            left: 15%;
             bottom: 25%;
             z-index: 2;
         }
@@ -71,7 +82,10 @@ body {
     }
 
     .right {
+        display: flex;
+        flex-direction: column;
         grid-area: 'right';
+        z-index: 1;
 
         .section-title {
             font-size: 3.2rem;
@@ -119,6 +133,7 @@ body {
                     }
 
                 }
+
             }
 
             .title {
@@ -130,6 +145,10 @@ body {
 
                 &:hover {
                     cursor: pointer;
+
+                    p {
+                        color: $primary-color;
+                    }
                 }
 
                 p {
@@ -150,6 +169,52 @@ body {
                 color: $very-dark-grayish-blue;
             }
 
+        }
+
+    }
+
+}
+
+@media (max-width: 1189px) {
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: 
+            'top'
+            'bottom';
+        min-width: 290px;
+        max-width: 310px;
+
+        .background {
+            display: none;
+        }
+
+        .left {
+            grid-area: top;
+            align-items: center;
+            justify-content: center;
+
+            .back {
+                transform: translateY(-65%);
+            }
+
+            .front {
+                transform: translate(-30%, -61%);
+                left: unset;
+                bottom: unset;
+            }
+
+        }
+
+        .right {
+            grid-area: bottom;
+
+            .section-title {
+                align-self: center;
+            }
         }
 
     }
