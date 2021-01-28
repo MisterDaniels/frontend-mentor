@@ -70,6 +70,10 @@ body {
         .back {
             transform: translateX(-25%);
             z-index: 1;
+
+            .hero-shadow {
+                display: none;
+            }
         }
 
         .front {
@@ -187,6 +191,7 @@ body {
             'bottom';
         min-width: 290px;
         max-width: 310px;
+        padding: 40px 20px;
 
         .background {
             display: none;
@@ -197,16 +202,29 @@ body {
             align-items: center;
             justify-content: center;
 
-            .back {
-                transform: translateY(-65%);
-            }
+            .hero {
+                transform: scale(0.8);
+                
+                .back {
+                    transform: translateY(-45%);
 
-            .front {
-                transform: translate(-30%, -61%);
-                left: unset;
-                bottom: unset;
-            }
+                    .hero-shadow {
+                        display: unset;
+                        position: absolute;
+                        transform: translate(-106%, 116%);
+                    }
+                }
 
+                .front {
+                    transform: translate(-70%, -70%);
+                    left: unset;
+                    bottom: unset;
+
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
         }
 
         .right {
@@ -214,6 +232,21 @@ body {
 
             .section-title {
                 align-self: center;
+                font-size: 3.0rem;
+            }
+        }
+
+        .question-accordion {
+            .question {
+                .title {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .detail {
+                    font-size: 1.2rem;
+                }
             }
         }
 
