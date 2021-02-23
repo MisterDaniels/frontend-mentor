@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="stylesheet" href="assets/styles/main.css">
+        
+        <title>Frontend Mentor | FAQ Accordion Card</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="card">
+                <div class="background"></div>
+                <div class="left">
+                    <div class="hero">
+                        <div class="back">
+                            <img 
+                                srcset="assets/images/illustration-woman-online-desktop.svg 472w,
+                                        assets/images/illustration-woman-online-mobile.svg 266w" 
+                                sizes="(max-width: 1189px) 266px,
+                                       472px"
+                                alt="FAQ">
+                            <img
+                                class="hero-shadow"
+                                srcset="assets/images/bg-pattern-mobile.svg 240w"
+                                sizes="(max-width: 1189px) 240px"
+                                alt="Hello Stranger">
+                        </div>
+                        <div class="front">
+                            <img src="assets/images/illustration-box-desktop.svg" alt="To help you">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 class="section-title">
+                        FAQ
+                    </h1>
+                    <div class="question-accordion">
+                        <div class="question">
+                            <input type="radio" name="question" id="question1" checked>
+                            <label for="question1" class="title">
+                                <p>How many team members can I invite?</p>
+                                <img src="assets/images/icon-arrow-down.svg" alt="show more">
+                            </label>
+                            <div class="detail">
+                                <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                                team members for the Premium plan.</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <input type="radio" name="question" id="question2">
+                            <label for="question2" class="title">
+                                <p>What is the maximum file upload size?</p>
+                                <img src="assets/images/icon-arrow-down.svg" alt="show more">
+                            </label>
+                            <div class="detail">
+                                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <input type="radio" name="question" id="question3">
+                            <label for="question3" class="title">
+                                <p>How do I reset my password?</p>
+                                <img src="assets/images/icon-arrow-down.svg" alt="show more">
+                            </label>
+                            <div class="detail">
+                                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                                A reset link will be emailed to you.</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <input type="radio" name="question" id="question4">
+                            <label for="question4" class="title">
+                                <p>Can I cancel my subscription?</p>
+                                <img src="assets/images/icon-arrow-down.svg" alt="show more">
+                            </label>
+                            <div class="detail">
+                                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <input type="radio" name="question" id="question5">
+                            <label for="question5" class="title">
+                                <p>Do you provide additional support?</p>
+                                <img src="assets/images/icon-arrow-down.svg" alt="show more">
+                            </label>
+                            <div class="detail">
+                                <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://misterdaniels.github.io" target="_blank">MisterDaniels</a>.
+        </div>
+    </body>
+</html>

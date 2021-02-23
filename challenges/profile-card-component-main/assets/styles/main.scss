@@ -10,6 +10,10 @@ $text-gray-color: hsl(0, 0%, 59%);
 $background-highlight-color: #ffffff;
 $border-highlight-color: #ffffff;
 
+html {
+    overflow-y: hidden;
+}
+
 body {
     display: flex;
     font-family: 'Kumbh Sans', sans-serif;
